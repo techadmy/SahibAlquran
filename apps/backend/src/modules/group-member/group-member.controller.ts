@@ -74,9 +74,10 @@ export class GroupMemberController {
   @Roles([UserRole.ADMIN, UserRole.MODERATOR])
   reactivateMember(
     @Param('groupId') groupId: string,
-    @Body(new ZodValidationPipe(reactivateMemberSchema('en'))) dto: ReactivateMemberDto
+    @Body(new ZodValidationPipe(reactivateMemberSchema('en'))) dto: ReactivateMemberDto,
+    @User() actor: PrismaUser
   ) {
-    return this.groupMemberService.reactivateMember(groupId, dto);
+    return this.groupMemberService.reactivateMember(groupId, dto, actor.id);
   }
 
   @Delete(':id')

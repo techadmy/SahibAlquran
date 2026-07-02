@@ -27,6 +27,7 @@ export function ReactivateLearnerButton({
       toast.success('تم تفعيل الطالب بنجاح');
       await queryClient.invalidateQueries({ queryKey: queryKeys.groups.all });
       await queryClient.invalidateQueries({ queryKey: ['wirds', 'tracking', groupId] });
+      await queryClient.invalidateQueries({ queryKey: queryKeys.requests.all });
       setConfirmOpen(false);
     },
     onError: (err) => toast.error(err.message ?? 'حدث خطأ'),

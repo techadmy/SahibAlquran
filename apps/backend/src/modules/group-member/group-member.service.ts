@@ -273,12 +273,45 @@ export class GroupMemberService {
 
   /**
    * Reactivate an INACTIVE group member by setting their status back to ACTIVE.
+   * If a pending ACTIVATION request exists for this learner, auto-approve it.
    * Validates that the member belongs to the specified group.
    */
-  async reactivateMember(groupId: string, dto: ReactivateMemberDto): Promise<void> {
-    await this.db.groupMember.update({
-      where: { groupId_studentId: { groupId, studentId: dto.studentId } },
-      data: { status: 'ACTIVE' },
+  async reactivateMember(
+    groupId: string,
+    dto: ReactivateMemberDto,
+    actorId: string
+  ): Promise<void> {
+    let autoApprovedRequestId: string | undefined;
+
+    await this.db.$transaction(async (tx) => {
+      // Check for pending ACTIVATION request
+      const pendingRequest = await tx.request.findFirst({
+        where: {
+          studentId: dto.studentId,
+          groupId,
+          type: 'ACTIVATION',
+          status: 'PENDING',
+        },
+      });
+
+      // If pending request exists, auto-approve it
+      if (pendingRequest) {
+        await tx.request.update({
+          where: { id: pendingRequest.id },
+          data: {
+            status: 'ACCEPTED',
+            reviewedBy: actorId,
+            reviewedAt: new Date(),
+          },
+        });
+        autoApprovedRequestId = pendingRequest.id;
+      }
+
+      // Update member status to ACTIVE
+      await tx.groupMember.update({
+        where: { groupId_studentId: { groupId, studentId: dto.studentId } },
+        data: { status: 'ACTIVE' },
+      });
     });
 
     const group = await this.db.group.findUniqueOrThrow({
@@ -286,11 +319,28 @@ export class GroupMemberService {
       select: { name: true },
     });
 
-    this.typedEmitter.emit('notification.send', {
-      type: 'LEARNER_REACTIVATED',
-      recipientId: dto.studentId,
-      payload: { groupId, groupName: group.name },
-    });
+    // Send appropriate notification based on scenario
+    if (autoApprovedRequestId) {
+      // If request was auto-approved, send REQUEST_UPDATED (consistent with manual approval)
+      this.typedEmitter.emit('notification.send', {
+        type: 'REQUEST_UPDATED',
+        recipientId: dto.studentId,
+        payload: {
+          requestId: autoApprovedRequestId,
+          requestType: 'ACTIVATION',
+          groupName: group.name,
+          groupId,
+          status: 'ACCEPTED',
+        },
+      });
+    } else {
+      // If no request exists, send LEARNER_REACTIVATED
+      this.typedEmitter.emit('notification.send', {
+        type: 'LEARNER_REACTIVATED',
+        recipientId: dto.studentId,
+        payload: { groupId, groupName: group.name },
+      });
+    }
   }
 
   /**
