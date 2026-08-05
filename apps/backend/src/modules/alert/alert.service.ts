@@ -3,6 +3,9 @@ import { DatabaseService } from '../database/database.service';
 import { TypedEventEmitter } from '../notification/typed-event-emitter.service';
 import type { Prisma } from 'generated/prisma/client';
 
+// Week runs Sat(6) -> Sun(0) -> Mon(1) -> Tue(2) -> Wed(3) -> Thu(4); no Friday.
+const WEEK_DAY_ORDER: readonly number[] = [6, 0, 1, 2, 3, 4];
+
 @Injectable()
 export class AlertService {
   constructor(
@@ -96,12 +99,17 @@ export class AlertService {
     const weekAlerts = await tx.alert.findMany({
       where: { studentId, weekId },
       select: { dayNumber: true },
-      orderBy: { dayNumber: 'asc' },
     });
 
-    const days = weekAlerts.map((a) => a.dayNumber);
-    const hasThreeConsecutive = days.some(
-      (day, i) => days[i + 1] === day + 1 && days[i + 2] === day + 2
+    // Map dayNumber (0=Sun..4=Thu, 6=Sat) to its position in the week order
+    // (Sat, Sun, Mon, Tue, Wed, Thu) so consecutiveness accounts for the
+    // Sat(6) -> Sun(0) wraparound at the start of the week.
+    const positions = weekAlerts
+      .map((a) => WEEK_DAY_ORDER.indexOf(a.dayNumber))
+      .sort((a, b) => a - b);
+
+    const hasThreeConsecutive = positions.some(
+      (pos, i) => positions[i + 1] === pos + 1 && positions[i + 2] === pos + 2
     );
 
     if (hasThreeConsecutive) {
