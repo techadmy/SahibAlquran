@@ -46,6 +46,7 @@ export interface UpdateLearnerDto {
   phone?: string;
   timezone?: TimeZoneType;
   contact?: LearnerContactDto;
+  password?: string;
 }
 
 export type QueryLearnersDto = PaginationQueryType & {

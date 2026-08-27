@@ -49,6 +49,7 @@ export function useStudentMainInfoModal({
       phone: learner && !isCreateMode ? (learner.phone ?? '') : '',
       timezone: learner && !isCreateMode ? learner.timezone || DEFAULT_TIMEZONE : DEFAULT_TIMEZONE,
       notes: learner && !isCreateMode ? learner.contact.notes || '' : '',
+      password: '',
       details: {
         age: !isCreateMode && learner?.contact.age != null ? String(learner.contact.age) : '',
         platform: (!isCreateMode && learner?.contact.platform) || undefined,
@@ -103,6 +104,7 @@ export function useStudentMainInfoModal({
             phone: values.phone.trim(),
             timezone: values.timezone,
             contact,
+            password: values.password?.trim() ? values.password.trim() : undefined,
           },
         };
 

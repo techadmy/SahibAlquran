@@ -4,6 +4,7 @@ import {
   notesSchema,
   timezoneFieldSchema,
   phoneSchema,
+  passwordSchema,
   TIME_MINUTES_MAX,
   recitationSchema,
   platformSchema,
@@ -13,6 +14,7 @@ import { z, type ZodType } from 'zod';
 
 export type StudentMainInfoFormValues = Pick<CreateLearnerDto, 'name' | 'phone' | 'timezone'> & {
   notes: string;
+  password?: string;
   details: {
     age: string;
     platform?: PlatformType;
@@ -26,6 +28,7 @@ export const studentMainInfoFormSchema = z.intersection(
     name: nameSchema(),
     phone: phoneSchema(),
     notes: notesSchema(),
+    password: z.union([passwordSchema(), z.literal('')]).optional(),
     details: z.object({
       age: z.string().trim(),
       platform: platformSchema(),

@@ -1,7 +1,13 @@
 import z, { ZodType } from 'zod';
 import { CreateLearnerDto, QueryLearnersDto, UpdateLearnerDto } from '../learner.types';
 import { getMessages, ValidationLocale } from './messages';
-import { contactDetailsSchema, nameSchema, notesSchema, phoneSchema } from './fields.schema';
+import {
+  contactDetailsSchema,
+  nameSchema,
+  notesSchema,
+  passwordSchema,
+  phoneSchema,
+} from './fields.schema';
 import { optionalTimezoneFieldSchema, timezoneFieldSchema } from './timezone.schema';
 import { paginationSchema } from './api.schema';
 import { TIMEZONE_VALUES } from '../utils/timezones.util';
@@ -30,6 +36,7 @@ export const updateLearnerSchema = (locale: ValidationLocale = 'ar') => {
         name: nameSchema(locale).optional(),
         phone: phoneSchema(locale).optional(),
         contact: learnerContactSchema(locale).optional(),
+        password: passwordSchema(locale).optional(),
       }),
       optionalTimezoneFieldSchema(locale)
     )

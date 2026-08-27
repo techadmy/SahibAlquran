@@ -420,6 +420,10 @@ export class UserService {
       data.recitation = dto.contact.recitation;
     }
 
+    if (dto.password !== undefined) {
+      data.password = await argon.hash(dto.password);
+    }
+
     const updatedLearner = await this.prismaService.user.update({
       where: {
         id,

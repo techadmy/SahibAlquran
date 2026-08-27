@@ -112,6 +112,18 @@ export function StudentMainInfoModal({
               rows={4}
             />
 
+            {mode === 'edit' ? (
+              <FormField
+                control={vm.form.control}
+                name='password'
+                id='student-password'
+                label='كلمة المرور الجديدة'
+                type='password'
+                placeholder='اتركه فارغًا للإبقاء على كلمة المرور الحالية'
+                disabled={isLoading}
+              />
+            ) : null}
+
             {LEARNER_DETAIL_FIELDS.map((field) => (
               <FormField
                 key={field.key}
