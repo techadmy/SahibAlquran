@@ -7,12 +7,22 @@ services:
       MYSQL_ROOT_PASSWORD: PASSWORD
       MYSQL_DATABASE: sahibalquran
     ports:
-      - '3305:3306'
+      - "3305:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     healthcheck:
-      test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost', '-u', 'root', '-pPASSWORD']
+      test:
+        [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "localhost",
+          "-u",
+          "root",
+          "-pPASSWORD",
+        ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -36,6 +46,7 @@ services:
       DATABASE_PASSWORD: PASSWORD
       DATABASE_NAME: sahibalquran
       JWT_SECRET: replace_with_strong_secret
+      IMAGEKIT_SECRET_KEY: private_QFfl9K3Ww/NDuZXqIJ93VwC2zO0=
       LOGS_DIR: /app/logs
 
   caddy:
@@ -45,8 +56,8 @@ services:
     depends_on:
       - app
     ports:
-      - '80:80'
-      - '443:443'
+      - "80:80"
+      - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data
