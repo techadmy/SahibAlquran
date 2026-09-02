@@ -3,7 +3,6 @@ name: Deploy to VPS
 on:
   push:
     branches: [main, master]
-  workflow_dispatch:
 
 jobs:
   deploy:
@@ -18,7 +17,7 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
             set -e
-            cd /root/sahibalquran
+            cd /root/Sahibalquran
             git fetch origin
             git reset --hard origin/main
             docker compose build app
