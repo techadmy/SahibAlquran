@@ -21,10 +21,10 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY --from=deps /app/apps ./apps
 COPY --from=deps /app/packages ./packages
 COPY . .
-RUN pnpm --filter @wirdi/shared build
-RUN pnpm --filter @wirdi/client build
-RUN pnpm --filter @wirdi/backend exec prisma generate
-RUN pnpm --filter @wirdi/backend build
+RUN pnpm --filter @sahibalquran/shared build
+RUN pnpm --filter @sahibalquran/client build
+RUN pnpm --filter @sahibalquran/backend exec prisma generate
+RUN pnpm --filter @sahibalquran/backend build
 
 FROM base AS prod-deps
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
@@ -34,7 +34,7 @@ COPY apps/client/package.json ./apps/client/package.json
 COPY packages/shared/package.json ./packages/shared/package.json
 RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \
   pnpm config set store-dir /pnpm/store && \
-  pnpm install --frozen-lockfile --prod --filter @wirdi/backend...
+  pnpm install --frozen-lockfile --prod --filter @sahibalquran/backend...
 
 FROM node:20-alpine AS runner
 ARG APP_VERSION=dev

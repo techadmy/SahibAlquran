@@ -1,12 +1,13 @@
 import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from '@nestjs/common';
 import { Request } from 'express';
 
-/** All ImageKit folders must be rooted under wirdi-assets/ */
-export type ImageKitFolder = `wirdi-assets/${'staging/' | 'development/' | ''}groups/${string}`;
+/** All ImageKit folders must be rooted under sahibalquran-assets/ */
+export type ImageKitFolder =
+  `sahibalquran-assets/${'staging/' | 'development/' | ''}groups/${string}`;
 
 /**
  * Builds an environment-scoped ImageKit folder path for a group.
- * Non-production envs are isolated under `wirdi-assets/<NODE_ENV>/groups/<id>/`
+ * Non-production envs are isolated under `sahibalquran-assets/<NODE_ENV>/groups/<id>/`
  * to prevent staging/dev uploads from colliding with production assets.
  */
 const _envSegment =
@@ -15,7 +16,7 @@ const _envSegment =
     : '';
 
 export function groupFolder(groupId: string): ImageKitFolder {
-  return `wirdi-assets/${_envSegment}groups/${groupId}` as ImageKitFolder;
+  return `sahibalquran-assets/${_envSegment}groups/${groupId}` as ImageKitFolder;
 }
 
 export function FolderInterceptor(folder: (req: Request) => ImageKitFolder) {

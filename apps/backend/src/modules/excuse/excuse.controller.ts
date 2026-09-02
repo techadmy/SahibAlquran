@@ -3,7 +3,7 @@ import { UserRole } from 'generated/prisma/client';
 import { Roles } from 'src/decorators/roles.decorator';
 import { User } from 'src/decorators/user.decorator';
 import { ZodValidationPipe } from 'src/pipes/zod-validation.pipe';
-import { createExcuseSchema, type CreateExcuseDto, type ExcuseDto } from '@wirdi/shared';
+import { createExcuseSchema, type CreateExcuseDto, type ExcuseDto } from '@sahibalquran/shared';
 import { ExcuseService } from './excuse.service';
 
 @Controller('excuse')

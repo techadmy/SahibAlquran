@@ -5,7 +5,7 @@ import { JwtService } from '@nestjs/jwt';
 import { User } from 'generated/prisma/client';
 import { UserService } from '../user/user.service';
 import { JWT_PAYLOAD } from './types/user-auth.type';
-import { ISODateString, LoginCredentialsDto, TimeZoneType } from '@wirdi/shared';
+import { ISODateString, LoginCredentialsDto, TimeZoneType } from '@sahibalquran/shared';
 
 @Injectable()
 export class AuthService {

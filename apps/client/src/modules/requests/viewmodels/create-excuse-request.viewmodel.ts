@@ -12,7 +12,7 @@ import type {
   ISODateString,
   CreateRequestDto,
   RequestDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export function useExcuseRequestViewModel(isOpen: boolean, defaultGroupId?: string) {
   const { user } = useApp();

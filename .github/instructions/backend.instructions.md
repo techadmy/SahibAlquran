@@ -35,12 +35,12 @@ applyTo: 'apps/backend/**'
 ## Validation
 
 - `ZodValidationPipe` on route parameters only (`@Body(...)`, `@Param(...)`, `@Query(...)`)
-- Import schemas from `@wirdi/shared`, call inline with `'en'` locale
+- Import schemas from `@sahibalquran/shared`, call inline with `'en'` locale
 - No validation logic in controllers or services — schemas + DB constraints only
 
 ## DTOs & Types
 
-- All DTOs from `@wirdi/shared` — no local DTO files
+- All DTOs from `@sahibalquran/shared` — no local DTO files
 - `DatesAsObjects` is backend-only — never import on client
 - Customize via `Pick` / `Omit` / `Partial` only
 - Every controller and service method must have an explicit return type

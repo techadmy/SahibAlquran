@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
-import { type User } from '@wirdi/shared';
+import { type User } from '@sahibalquran/shared';
 import { storageService } from '@/services';
 
 interface AppContextType {

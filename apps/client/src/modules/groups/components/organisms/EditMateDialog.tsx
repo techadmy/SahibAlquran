@@ -14,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import type { GroupMemberDto } from '@wirdi/shared';
+import type { GroupMemberDto } from '@sahibalquran/shared';
 
 const NO_MATE_VALUE = '__none__';
 

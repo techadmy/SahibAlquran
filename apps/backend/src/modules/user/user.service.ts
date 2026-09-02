@@ -27,7 +27,7 @@ import {
   UserAuthType,
   UpdateLearnerDto,
   TimeZoneType,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { Prisma, User, UserRole } from 'generated/prisma/client';
 
 @Injectable()

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PageHeader } from '@/components/ui/page-header';
 import { Typography } from '@/components/ui/typography';
-import type { GroupDto, GroupStatus } from '@wirdi/shared';
+import type { GroupDto, GroupStatus } from '@sahibalquran/shared';
 import { GroupStatusBadge } from '../components/atoms/GroupStatusBadge';
 import { StatsCountCard } from '../components/molecules/StatsCountCard';
 import { CreateGroupModal } from '../components/organisms/CreateGroupModal';

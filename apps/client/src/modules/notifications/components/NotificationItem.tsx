@@ -1,5 +1,5 @@
-import type { ISODateString, NotificationDto } from '@wirdi/shared';
-import { formatRelativeTime } from '@wirdi/shared';
+import type { ISODateString, NotificationDto } from '@sahibalquran/shared';
+import { formatRelativeTime } from '@sahibalquran/shared';
 import { Typography } from '@/components/ui/typography';
 import { useNavigate } from 'react-router-dom';
 import {

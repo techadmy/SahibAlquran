@@ -1,7 +1,7 @@
 import { PrismaClient } from 'generated/prisma/client';
 import { faker, fakerAR } from '@faker-js/faker';
 import argon from 'argon2';
-import { normalizeArabic, UserRole } from '@wirdi/shared';
+import { normalizeArabic, UserRole } from '@sahibalquran/shared';
 
 const seedTimezones = [
   'Africa/Cairo',

@@ -7,7 +7,7 @@ import { ExcuseRequestModal } from '../components/organisms/ExcuseRequestModal';
 import { ActivationRequestModal } from '../components/organisms/ActivationRequestModal';
 import { RequestsTable } from '../components/organisms/RequestsTable';
 import { useMyRequestsViewModel } from '../viewmodels/requests.viewmodel';
-import type { TimeZoneType } from '@wirdi/shared';
+import type { TimeZoneType } from '@sahibalquran/shared';
 
 export function LearnerRequestsView() {
   const { user } = useApp();

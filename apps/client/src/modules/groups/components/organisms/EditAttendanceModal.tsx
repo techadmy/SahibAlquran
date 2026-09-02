@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Typography } from '@/components/ui/typography';
 import { useEditAttendanceViewModel } from '../../viewmodels/edit-attendance.viewmodel';
-import type { StudentDayWird, UpdateStudentWirdsDto } from '@wirdi/shared';
+import type { StudentDayWird, UpdateStudentWirdsDto } from '@sahibalquran/shared';
 
 const DAY_LABELS: Record<number, string> = {
   6: 'السبت',

@@ -24,13 +24,13 @@ import { PaginationControls } from '@/components/ui/pagination-controls';
 import { StudentTableItem } from '@/modules/learners/components/student-table-item';
 import { StudentMainInfoModal } from '@/modules/learners/components/student-main-info-modal';
 import type { StudentMainInfoSubmitArgs } from '@/modules/learners/components/student-main-info-modal';
-import type { LearnerDto } from '@wirdi/shared';
+import type { LearnerDto } from '@sahibalquran/shared';
 import {
   LEARNER_DETAIL_FIELDS,
   PLATFORM_OPTIONS,
   RECITATION_OPTIONS,
   TIMEZONES,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { useLearnersViewModel } from '../viewmodels/learners.viewmodel';
 
 export default function LearnersView() {

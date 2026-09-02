@@ -22,7 +22,7 @@ import {
   isDateTodayOrFuture,
   dateOnlyToUTC,
   formatDate,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import type { User as PrismaUser } from 'generated/prisma/client';
 
 @Injectable()

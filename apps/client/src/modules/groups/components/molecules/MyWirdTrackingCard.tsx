@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { WirdTrackingTable } from '../organisms/WirdTrackingTable';
-import type { GroupWirdTrackingRowDto, TimeZoneType } from '@wirdi/shared';
+import type { GroupWirdTrackingRowDto, TimeZoneType } from '@sahibalquran/shared';
 
 type Props = {
   rows: GroupWirdTrackingRowDto[];

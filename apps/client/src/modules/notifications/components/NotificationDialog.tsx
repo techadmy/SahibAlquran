@@ -1,4 +1,4 @@
-import type { NotificationDto } from '@wirdi/shared';
+import type { NotificationDto } from '@sahibalquran/shared';
 import {
   Dialog,
   DialogContent,

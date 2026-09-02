@@ -1,5 +1,5 @@
 import { apiClient } from '@/services';
-import type { CreateExcuseDto, ExcuseDto, UnifiedApiResponse } from '@wirdi/shared';
+import type { CreateExcuseDto, ExcuseDto, UnifiedApiResponse } from '@sahibalquran/shared';
 
 export const excuseService = {
   getStudentExcuses: (

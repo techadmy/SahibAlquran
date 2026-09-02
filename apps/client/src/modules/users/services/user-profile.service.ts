@@ -4,7 +4,7 @@ import {
   ChangeOwnPasswordDto,
   UpdateOwnProfileDto,
   UserAuthType,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const userProfileService = {
   /**

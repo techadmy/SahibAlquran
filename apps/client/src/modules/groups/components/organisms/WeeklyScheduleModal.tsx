@@ -10,8 +10,8 @@ import { Field, FieldLabel } from '@/components/ui/field';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import type { ISODateOnlyString, WeekDto } from '@wirdi/shared';
-import { formatDateArabicNoWeekday, formatDateLongArabic } from '@wirdi/shared';
+import type { ISODateOnlyString, WeekDto } from '@sahibalquran/shared';
+import { formatDateArabicNoWeekday, formatDateLongArabic } from '@sahibalquran/shared';
 import { useWeeklyScheduleViewModel } from '../../viewmodels/weekly-schedule.viewmodel';
 
 type ScheduleGridProps = {

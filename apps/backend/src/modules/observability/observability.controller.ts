@@ -1,5 +1,9 @@
 import { Body, Controller, Get, Post, Req } from '@nestjs/common';
-import { type ClientErrorLogDto, type ClientErrorLogResponseDto, getNowAsUTC } from '@wirdi/shared';
+import {
+  type ClientErrorLogDto,
+  type ClientErrorLogResponseDto,
+  getNowAsUTC,
+} from '@sahibalquran/shared';
 import type { Request } from 'express';
 import { Throttle } from '@nestjs/throttler';
 import { IsPublic } from 'src/decorators/public.decorator';

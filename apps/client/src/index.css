@@ -44,8 +44,8 @@
   --card-foreground: oklch(0.205 0.01 218);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.205 0.01 218);
-  /* Quran app palette (calm + minimal): primary=cerulean blue */
-  --primary: oklch(0.625 0.148 212);
+  /* Quran app palette (calm + minimal): primary=deep teal */
+  --primary: oklch(0.58 0.11 195);
   --primary-foreground: oklch(0.985 0 0);
   /* Semantic status colors */
   --success: oklch(0.722 0.155 145.12);
@@ -64,7 +64,7 @@
   --border: oklch(0.913 0.01 214);
   --input: oklch(0.932 0.008 214);
   --input-background: oklch(0.982 0.005 214);
-  --ring: oklch(0.625 0.148 212 / 42%);
+  --ring: oklch(0.58 0.11 195 / 42%);
 }
 
 .dark {
@@ -74,7 +74,7 @@
   --card-foreground: oklch(0.958 0.015 210);
   --popover: oklch(0.205 0.038 220);
   --popover-foreground: oklch(0.958 0.015 210);
-  --primary: oklch(0.785 0.155 208);
+  --primary: oklch(0.75 0.115 195);
   --primary-foreground: oklch(0.985 0 0);
   --success: oklch(0.79 0.145 145.12);
   --success-foreground: oklch(0.205 0.01 218);
@@ -92,7 +92,7 @@
   --border: oklch(0.36 0.05 214 / 52%);
   --input: oklch(0.27 0.035 216 / 72%);
   --input-background: oklch(0.258 0.03 218 / 84%);
-  --ring: oklch(0.785 0.155 208 / 45%);
+  --ring: oklch(0.75 0.115 195 / 45%);
 }
 
 @layer base {

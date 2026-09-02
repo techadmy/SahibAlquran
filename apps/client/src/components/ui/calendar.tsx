@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { formatDate, getStartAndEndOfDay } from '@wirdi/shared';
+import { formatDate, getStartAndEndOfDay } from '@sahibalquran/shared';
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { DayPicker, getDefaultClassNames, type DayButton, type Matcher } from 'react-day-picker';
 

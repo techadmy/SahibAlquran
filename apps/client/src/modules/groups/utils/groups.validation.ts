@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { createWeekScheduleSchema } from '@wirdi/shared';
-import type { ReadSourceType } from '@wirdi/shared';
+import { createWeekScheduleSchema } from '@sahibalquran/shared';
+import type { ReadSourceType } from '@sahibalquran/shared';
 
 export const attendanceFormSchema = z.record(z.string(), z.boolean().optional());
 export type AttendanceFormValues = z.infer<typeof attendanceFormSchema>;

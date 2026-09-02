@@ -1,6 +1,6 @@
 // Generic API mutation hook with unified error handling
 import { useMutation, type UseMutationOptions } from '@tanstack/react-query';
-import type { UnifiedApiResponse } from '@wirdi/shared';
+import type { UnifiedApiResponse } from '@sahibalquran/shared';
 import type { ApiError } from '@/lib/errors/normalize-error';
 
 export type { ApiError } from '@/lib/errors/normalize-error';

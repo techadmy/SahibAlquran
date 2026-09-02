@@ -1,4 +1,4 @@
-import type { NotificationDto, NotificationType } from '@wirdi/shared';
+import type { NotificationDto, NotificationType } from '@sahibalquran/shared';
 import { Bell, AlertTriangle, FileText, CheckCircle, XCircle } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { queryKeys } from '@/lib/query-client';

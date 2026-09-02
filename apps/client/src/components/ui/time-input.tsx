@@ -1,5 +1,9 @@
-import { minutesToInputTimeString, minutesToTimeString, timeStringToMinutes } from '@wirdi/shared';
-import type { TimeMinutes } from '@wirdi/shared';
+import {
+  minutesToInputTimeString,
+  minutesToTimeString,
+  timeStringToMinutes,
+} from '@sahibalquran/shared';
+import type { TimeMinutes } from '@sahibalquran/shared';
 import { Clock } from 'lucide-react';
 import { Input } from './input';
 import { cn } from '@/lib/utils';

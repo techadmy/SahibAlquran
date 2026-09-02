@@ -18,7 +18,7 @@ import {
   type TimeZoneType,
   type TimeMinutes,
   type UpdateLearnerDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { toast } from 'sonner';
 import { useApp } from '@/contexts/AppContext';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';

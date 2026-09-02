@@ -23,7 +23,7 @@ import {
   type CreateAndAssignLearnersDto,
   type ReactivateMemberDto,
   type UpdateMemberMateDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { GroupMemberService } from './group-member.service';
 
 @Controller('group-member')

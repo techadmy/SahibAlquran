@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { StudentMainInfoModal } from './student-main-info-modal';
 import type { StudentMainInfoLearner, StudentMainInfoSubmitArgs } from './student-main-info-modal';
-import type { UpdateLearnerDto } from '@wirdi/shared';
+import type { UpdateLearnerDto } from '@sahibalquran/shared';
 
 type LearnerEditDeleteActionsProps = {
   learner: StudentMainInfoLearner;

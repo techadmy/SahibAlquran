@@ -2,8 +2,8 @@ import { Injectable, Logger } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { AlertService } from './alert.service';
 import { DatabaseService } from '../database/database.service';
-import { dateToISODateOnly, addDaysToDateStr } from '@wirdi/shared';
-import type { ISODateOnlyString } from '@wirdi/shared';
+import { dateToISODateOnly, addDaysToDateStr } from '@sahibalquran/shared';
+import type { ISODateOnlyString } from '@sahibalquran/shared';
 import type { Prisma } from 'generated/prisma/client';
 
 @Injectable()

@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { User, Lock, AlertCircle } from 'lucide-react';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
-import { LEARNER_DETAIL_FIELDS, TIMEZONES } from '@wirdi/shared';
+import { LEARNER_DETAIL_FIELDS, TIMEZONES } from '@sahibalquran/shared';
 import { FormField } from '@/components/forms/form-field';
 import { TimezoneDisplay } from '@/components/ui/timezone-display';
 import { UserBadge } from '../components/UserBadge';

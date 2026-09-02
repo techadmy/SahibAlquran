@@ -4,7 +4,7 @@ applyTo: '**'
 
 # Pagination Rules
 
-## Shared Types (`@wirdi/shared`)
+## Shared Types (`@sahibalquran/shared`)
 
 - `PaginationQueryType` — input: `{ page: number; limit: number }` (defaults: `page=1`, `limit=10`)
 - `PaginationResponseMeta` — response meta: `{ totalItems, totalPages, currentPage, itemsPerPage }`

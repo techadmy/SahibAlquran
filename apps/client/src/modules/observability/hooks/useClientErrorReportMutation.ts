@@ -1,4 +1,4 @@
-import type { ClientErrorLogDto, ClientErrorLogResponseDto } from '@wirdi/shared';
+import type { ClientErrorLogDto, ClientErrorLogResponseDto } from '@sahibalquran/shared';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { observabilityService } from '../services/observability.service';
 

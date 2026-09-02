@@ -16,7 +16,7 @@ import type {
   ScheduleImageDto,
   UnifiedApiResponse,
   UpdateMemberMateDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const groupService = {
   getStats: async (): Promise<UnifiedApiResponse<GroupStatsDto>> =>

@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { Roles } from 'src/decorators/roles.decorator';
-import type { GroupStatsDto } from '@wirdi/shared';
+import type { GroupStatsDto } from '@sahibalquran/shared';
 import { StatsOrchestrator } from './stats.orchestrator';
 
 @Controller('stats')

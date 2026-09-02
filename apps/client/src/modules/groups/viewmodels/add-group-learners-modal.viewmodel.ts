@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useForm, useFieldArray, type Resolver } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { createAndAssignLearnersSchema, DEFAULT_TIMEZONE } from '@wirdi/shared';
-import type { CreateAndAssignLearnersDto } from '@wirdi/shared';
+import { createAndAssignLearnersSchema, DEFAULT_TIMEZONE } from '@sahibalquran/shared';
+import type { CreateAndAssignLearnersDto } from '@sahibalquran/shared';
 
 type FormValues = Pick<CreateAndAssignLearnersDto, 'learners'>;
 

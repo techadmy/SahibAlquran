@@ -1,4 +1,4 @@
-# Wirdi
+# SahibAlquran
 
 Arabic web app for tracking daily Quran recitation (wird) in study groups. Learners record حفظ / مراجعة / تلاوة with their assigned mate, Saturday → Thursday.
 
@@ -35,7 +35,7 @@ Arabic web app for tracking daily Quran recitation (wird) in study groups. Learn
 - [ ] `useApiQuery` / `useApiMutation` only
 - [ ] Cache invalidated after mutations
 - [ ] `ConfirmDialog` + `toast` on every mutation
-- [ ] Validation via Zod schemas from `@wirdi/shared` only
+- [ ] Validation via Zod schemas from `@sahibalquran/shared` only
 - [ ] No validation logic in controllers or services — schemas + DB constraints only
 - [ ] always go with the simplest solution, and readable code and reusable functions, even if it means more lines of code with typesafety and maintainability benefits
   > Detailed rules per domain: see `.github/instructions/`

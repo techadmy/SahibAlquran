@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   mysql:
     image: mysql:8.0
-    container_name: wirdi-mysql
+    container_name: sahibalquran-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: PASSWORD
-      MYSQL_DATABASE: wirdi
+      MYSQL_DATABASE: sahibalquran
     ports:
       - '3305:3306'
     volumes:
@@ -19,5 +17,37 @@ services:
       timeout: 5s
       retries: 5
 
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sahibalquran-app
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      DATABASE_URL: mysql://root:PASSWORD@mysql:3306/sahibalquran
+      JWT_SECRET: replace_with_strong_secret
+      LOGS_DIR: /app/logs
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: sahibalquran-caddy
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
 volumes:
   mysql_data:
+  caddy_data:
+  caddy_config:

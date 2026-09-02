@@ -2,10 +2,10 @@ import { Controller, Post, Body } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
 import { AuthService } from './auth.service';
 
-import { loginSchema } from '@wirdi/shared';
+import { loginSchema } from '@sahibalquran/shared';
 import { ZodValidationPipe } from 'src/pipes/zod-validation.pipe';
 import { IsPublic } from 'src/decorators/public.decorator';
-import type { LoginCredentialsDto, AuthResponseDto } from '@wirdi/shared';
+import type { LoginCredentialsDto, AuthResponseDto } from '@sahibalquran/shared';
 
 @Controller('auth')
 @IsPublic()

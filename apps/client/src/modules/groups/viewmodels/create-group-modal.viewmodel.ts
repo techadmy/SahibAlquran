@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { createGroupSchema } from '@wirdi/shared';
-import type { CreateGroupDto } from '@wirdi/shared';
+import { createGroupSchema } from '@sahibalquran/shared';
+import type { CreateGroupDto } from '@sahibalquran/shared';
 
 type UseCreateGroupModalArgs = {
   onSubmit: (data: CreateGroupDto) => Promise<void>;

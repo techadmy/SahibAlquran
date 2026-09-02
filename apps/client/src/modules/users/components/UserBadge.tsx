@@ -1,4 +1,4 @@
-import { UserRole } from '@wirdi/shared';
+import { UserRole } from '@sahibalquran/shared';
 import { Badge } from '@/components/ui/badge';
 import { ROLE_CONFIG } from '../utils/user.util';
 import type { InteractiveVariant } from '@/components/ui/interactive-variants';

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { ApiErrorResponse } from '@wirdi/shared';
+import { ApiErrorResponse } from '@sahibalquran/shared';
 
 export type ApiError = {
   message: string;

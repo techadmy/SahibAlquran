@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { FormField } from '@/components/forms/form-field';
-import type { CreateGroupDto, StaffUserDto } from '@wirdi/shared';
+import type { CreateGroupDto, StaffUserDto } from '@sahibalquran/shared';
 import { AwradField, ModeratorSelectField, STATUS_OPTIONS } from './group-form-shared';
 import { useCreateGroupModal } from '../../viewmodels/create-group-modal.viewmodel';
 

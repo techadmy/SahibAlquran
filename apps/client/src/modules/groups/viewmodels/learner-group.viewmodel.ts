@@ -2,7 +2,7 @@ import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { queryKeys } from '@/lib/query-client';
 import { groupService } from '../services/group.service';
 import { learnerWirdService } from '../services/learner-wird.service';
-import type { GroupDto, LearnerGroupOverviewDto } from '@wirdi/shared';
+import type { GroupDto, LearnerGroupOverviewDto } from '@sahibalquran/shared';
 
 export function useLearnerGroupViewModel(groupId: string) {
   const groupQuery = useApiQuery<GroupDto>({

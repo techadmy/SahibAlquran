@@ -4,7 +4,7 @@ import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';
 import { wirdService } from '../services/wird.service';
-import type { UpdateStudentWirdsDto } from '@wirdi/shared';
+import type { UpdateStudentWirdsDto } from '@sahibalquran/shared';
 
 export function useEditAttendanceViewModel(
   studentId: string,

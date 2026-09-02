@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui/badge';
-import type { GroupStatus } from '@wirdi/shared';
+import type { GroupStatus } from '@sahibalquran/shared';
 
 type GroupStatusBadgeProps = { status: GroupStatus };
 

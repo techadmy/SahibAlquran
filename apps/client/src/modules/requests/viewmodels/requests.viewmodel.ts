@@ -4,7 +4,12 @@ import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';
 import { requestService } from '../services/request.service';
-import type { RequestDto, ReviewRequestDto, RequestStatus, RequestStatsDto } from '@wirdi/shared';
+import type {
+  RequestDto,
+  ReviewRequestDto,
+  RequestStatus,
+  RequestStatsDto,
+} from '@sahibalquran/shared';
 
 // For admin/moderator — paginated requests with stats
 export function useRequestsViewModel(status?: RequestStatus) {

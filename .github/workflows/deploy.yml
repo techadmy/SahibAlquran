@@ -1,25 +1,26 @@
 name: Deploy to VPS
 
 on:
-  workflow_run:
-    workflows: ["Docker Publish"]
-    branches: [main]
-    types: [completed]
+  push:
+    branches: [main, master]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1
         with:
-          host: 213.199.38.183
+          host: 157.173.109.233
           username: root
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
-            cd /root/controller-hub
-            docker compose pull wirdi-prod wirdi-staging
-            docker compose up -d --no-deps wirdi-prod wirdi-staging
+            set -e
+            cd /root/sahibalquran
+            git fetch origin
+            git reset --hard origin/main
+            docker compose build app
+            docker compose up -d
             docker image prune -f

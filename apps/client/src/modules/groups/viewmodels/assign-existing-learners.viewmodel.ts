@@ -4,7 +4,7 @@ import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';
 import { groupService } from '../services/group.service';
-import type { AssignLearnersToGroupDto, LearnerDto } from '@wirdi/shared';
+import type { AssignLearnersToGroupDto, LearnerDto } from '@sahibalquran/shared';
 
 export function useAssignExistingLearnersViewModel(groupId: string, isActive: boolean) {
   const [search, setSearch] = useState('');

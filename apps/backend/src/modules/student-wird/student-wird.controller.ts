@@ -13,7 +13,7 @@ import {
   type StudentWeekWirdsDto,
   type UpdateStudentWirdsDto,
   type RecordLearnerWirdDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { StudentWirdService } from './student-wird.service';
 
 @Controller('student-wird')

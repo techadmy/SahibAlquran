@@ -1,4 +1,4 @@
-import type { SendNotificationDto, NotificationType, NotificationDto } from '@wirdi/shared';
+import type { SendNotificationDto, NotificationType, NotificationDto } from '@sahibalquran/shared';
 
 /**
  * Discriminated union of all notification event payloads

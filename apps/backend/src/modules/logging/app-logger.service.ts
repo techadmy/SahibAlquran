@@ -1,5 +1,5 @@
 import { ConsoleLogger, Injectable } from '@nestjs/common';
-import { getNowAsUTC } from '@wirdi/shared';
+import { getNowAsUTC } from '@sahibalquran/shared';
 import fs from 'node:fs';
 import path from 'node:path';
 import winston, { type Logger as WinstonLogger } from 'winston';

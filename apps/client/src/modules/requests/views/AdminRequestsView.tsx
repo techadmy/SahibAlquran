@@ -7,7 +7,7 @@ import { PaginationControls } from '@/components/ui/pagination-controls';
 import { useApp } from '@/contexts/AppContext';
 import { RequestsTable } from '../components/organisms/RequestsTable';
 import { useRequestsViewModel } from '../viewmodels/requests.viewmodel';
-import type { RequestStatus, TimeZoneType } from '@wirdi/shared';
+import type { RequestStatus, TimeZoneType } from '@sahibalquran/shared';
 
 export function AdminRequestsView() {
   const { user } = useApp();

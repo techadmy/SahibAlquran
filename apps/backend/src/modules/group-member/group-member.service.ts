@@ -13,7 +13,7 @@ import {
   UpdateMemberMateDto,
   TimeZoneType,
   normalizeArabic,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { UserRole } from 'generated/prisma/client';
 
 @Injectable()

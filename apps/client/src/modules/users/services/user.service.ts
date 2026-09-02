@@ -6,7 +6,7 @@ import {
   StaffUsersResponseDto,
   UnifiedApiResponse,
   UpdateStaffUserDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const userService = {
   getStaffUsers: async (): Promise<UnifiedApiResponse<StaffUsersResponseDto>> =>

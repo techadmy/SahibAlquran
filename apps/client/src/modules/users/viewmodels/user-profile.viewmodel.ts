@@ -9,7 +9,7 @@ import {
   changeOwnPasswordSchema,
   updateOwnProfileSchema,
   DEFAULT_TIMEZONE,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { toast } from 'sonner';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { userProfileService } from '../services/user-profile.service';

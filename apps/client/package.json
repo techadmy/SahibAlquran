@@ -1,5 +1,5 @@
 {
-  "name": "@wirdi/client",
+  "name": "@sahibalquran/client",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -14,7 +14,7 @@
     "@radix-ui/react-tabs": "^1.1.3",
     "@tanstack/react-query": "^5.66.1",
     "@tanstack/react-table": "^8.21.3",
-    "@wirdi/shared": "workspace:*",
+    "@sahibalquran/shared": "workspace:*",
     "axios": "^1.7.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

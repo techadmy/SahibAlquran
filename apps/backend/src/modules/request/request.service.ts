@@ -10,8 +10,8 @@ import type {
   PaginationQueryType,
   PaginationResponseMeta,
   RequestPayloadMap,
-} from '@wirdi/shared';
-import type { ISODateString } from '@wirdi/shared';
+} from '@sahibalquran/shared';
+import type { ISODateString } from '@sahibalquran/shared';
 import type { Prisma } from 'generated/prisma/client';
 
 @Injectable()

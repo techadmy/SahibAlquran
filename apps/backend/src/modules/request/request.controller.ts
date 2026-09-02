@@ -26,7 +26,7 @@ import {
   type RequestStatsDto,
   type UserRole as UserRoleType,
   type PaginationQueryType,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 @Controller('request')
 export class RequestController {

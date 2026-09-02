@@ -1,5 +1,5 @@
 {
-  "name": "wirdi",
+  "name": "sahibalquran",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@9.12.0",
@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "start": "turbo start --filter=@wirdi/backend --filter=@wirdi/client",
+    "start": "turbo start --filter=@sahibalquran/backend --filter=@sahibalquran/client",
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
     "format": "prettier --write .",

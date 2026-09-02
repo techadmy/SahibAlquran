@@ -6,7 +6,7 @@ import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';
 import { userService } from '@/modules/users/services/user.service';
 import { groupService } from '../services/group.service';
-import type { GroupDto, UpdateGroupDto, StaffUserDto } from '@wirdi/shared';
+import type { GroupDto, UpdateGroupDto, StaffUserDto } from '@sahibalquran/shared';
 
 export function useGroupDetailViewModel(groupId: string) {
   const navigate = useNavigate();

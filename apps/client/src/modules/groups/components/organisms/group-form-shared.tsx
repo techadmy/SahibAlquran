@@ -7,8 +7,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { TIMEZONES } from '@wirdi/shared';
-import type { AwradType, StaffUserDto } from '@wirdi/shared';
+import { TIMEZONES } from '@sahibalquran/shared';
+import type { AwradType, StaffUserDto } from '@sahibalquran/shared';
 
 export const AWRAD_SUGGESTIONS: AwradType[] = [
   'حفظ',

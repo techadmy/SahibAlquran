@@ -1,5 +1,5 @@
 {
-  "name": "@wirdi/backend",
+  "name": "@sahibalquran/backend",
   "version": "0.0.1",
   "private": true,
   "license": "UNLICENSED",
@@ -41,7 +41,7 @@
     "@nestjs/throttler": "^6.5.0",
     "@prisma/adapter-mariadb": "^7.3.0",
     "@prisma/client": "^7.3.0",
-    "@wirdi/shared": "workspace:*",
+    "@sahibalquran/shared": "workspace:*",
     "argon2": "^0.44.0",
     "dotenv": "^17.2.3",
     "prisma": "^7.3.0",

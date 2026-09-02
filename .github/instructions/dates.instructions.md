@@ -17,11 +17,11 @@ applyTo: '**'
 
 ## Utilities
 
-- Use **only** `date.util` (Luxon-based) from `@wirdi/shared` for all date logic
-- Use **only** `timezone.util` from `@wirdi/shared` for timezone operations
+- Use **only** `date.util` (Luxon-based) from `@sahibalquran/shared` for all date logic
+- Use **only** `timezone.util` from `@sahibalquran/shared` for timezone operations
 - Do **not** install or import any date library (`dayjs`, `date-fns`, `moment`) in `apps/client` or `apps/backend`
-- create new utility functions in `@wirdi/shared` if needed — no local date logic in client or backend
+- create new utility functions in `@sahibalquran/shared` if needed — no local date logic in client or backend
 
 ## types
 
-- any date type must be ISODateOnlyString or ISODateString from `@wirdi/shared`
+- any date type must be ISODateOnlyString or ISODateString from `@sahibalquran/shared`

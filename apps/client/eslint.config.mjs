@@ -42,7 +42,7 @@ export default defineConfig(
         },
         {
           selector: "NewExpression[callee.name='Date']",
-          message: 'Use @wirdi/shared date utilities instead of direct Date construction.',
+          message: 'Use @sahibalquran/shared date utilities instead of direct Date construction.',
         },
       ],
     },

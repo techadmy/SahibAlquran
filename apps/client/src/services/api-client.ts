@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { UnifiedApiResponse } from '@wirdi/shared';
+import { UnifiedApiResponse } from '@sahibalquran/shared';
 import { normalizeError } from '@/lib/errors/normalize-error';
 
 class ApiClient {
@@ -27,7 +27,7 @@ class ApiClient {
     // Request interceptor
     this.client.interceptors.request.use(
       (config) => {
-        const token = localStorage.getItem('wirdi_token');
+        const token = localStorage.getItem('sahibalquran_token');
         if (token) {
           config.headers.Authorization = `Bearer ${token}`;
         }
@@ -45,8 +45,8 @@ class ApiClient {
 
           if (!isLoginRequest) {
             // Only redirect to login if it's NOT the login endpoint
-            localStorage.removeItem('wirdi_token');
-            localStorage.removeItem('wirdi_user');
+            localStorage.removeItem('sahibalquran_token');
+            localStorage.removeItem('sahibalquran_user');
             window.location.href = '/login';
           }
         }

@@ -1,6 +1,6 @@
 import { Injectable, ForbiddenException, BadRequestException } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import { CreateExcuseDto, ExcuseDto } from '@wirdi/shared';
+import { CreateExcuseDto, ExcuseDto } from '@sahibalquran/shared';
 
 @Injectable()
 export class ExcuseService {

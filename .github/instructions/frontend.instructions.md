@@ -35,7 +35,7 @@ src/modules/[module]/
 ## Forms
 
 - `react-hook-form` for every form — no exceptions
-- Zod resolver using schemas from `@wirdi/shared`
+- Zod resolver using schemas from `@sahibalquran/shared`
 - always Use `FormField` (`src/components/forms/form-field.tsx`) for all fields and create only if absolutely necessary
 
 ## Routing
@@ -45,5 +45,5 @@ src/modules/[module]/
 
 ## Types
 
-- always use types from `@wirdi/shared` for DTOs
-- if you must create a new type, also import from `@wirdi/shared` and use utility types to create the new type (e.g. `Pick`, `Omit`, etc.) — never duplicate properties
+- always use types from `@sahibalquran/shared` for DTOs
+- if you must create a new type, also import from `@sahibalquran/shared` and use utility types to create the new type (e.g. `Pick`, `Omit`, etc.) — never duplicate properties

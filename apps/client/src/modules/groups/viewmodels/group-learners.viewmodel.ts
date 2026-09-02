@@ -11,7 +11,7 @@ import type {
   LearnerDto,
   UpdateLearnerDto,
   UpdateMemberMateDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export function useGroupLearnersViewModel(groupId: string) {
   const [page, setPage] = useState(1);

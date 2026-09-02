@@ -19,7 +19,7 @@ import { useGroupDetailViewModel } from '../viewmodels/group-detail.viewmodel';
 import { useWirdTrackingViewModel } from '../viewmodels/wird-tracking.viewmodel';
 import { useGroupLearnersViewModel } from '../viewmodels/group-learners.viewmodel';
 import { StudentMainInfoModal } from '@/modules/learners/components/student-main-info-modal';
-import type { GroupWirdTrackingRowDto } from '@wirdi/shared';
+import type { GroupWirdTrackingRowDto } from '@sahibalquran/shared';
 
 type Props = { groupId: string };
 

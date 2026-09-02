@@ -12,8 +12,8 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-const THEME_STORAGE_KEY = 'wirdi_theme';
-const FONT_SCALE_STORAGE_KEY = 'wirdi_font_scale';
+const THEME_STORAGE_KEY = 'sahibalquran_theme';
+const FONT_SCALE_STORAGE_KEY = 'sahibalquran_font_scale';
 const DEFAULT_FONT_SCALE = 100;
 const MIN_FONT_SCALE = 90;
 const MAX_FONT_SCALE = 115;

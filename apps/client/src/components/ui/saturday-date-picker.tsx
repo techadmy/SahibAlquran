@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { CalendarIcon } from 'lucide-react';
 import type { Matcher } from 'react-day-picker';
-import { formatDateLongArabic, type ISODateOnlyString } from '@wirdi/shared';
+import { formatDateLongArabic, type ISODateOnlyString } from '@sahibalquran/shared';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';

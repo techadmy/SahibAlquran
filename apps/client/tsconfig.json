@@ -32,7 +32,7 @@
       "@/contexts/*": ["./src/contexts/*"],
       "@/hoc/*": ["./src/hoc/*"],
       "@/styles/*": ["./src/styles/*"],
-      "@wirdi/shared": ["../../packages/shared/src/index.ts"]
+      "@sahibalquran/shared": ["../../packages/shared/src/index.ts"]
     }
   },
   "include": ["src", "src/router.tsx"]

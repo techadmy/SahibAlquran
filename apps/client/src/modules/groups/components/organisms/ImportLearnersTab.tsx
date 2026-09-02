@@ -10,8 +10,8 @@ import {
 import { Button } from '@/components/ui/button';
 import { DialogFooter } from '@/components/ui/dialog';
 import { Typography } from '@/components/ui/typography';
-import { LEARNER_DETAIL_FIELDS } from '@wirdi/shared';
-import type { CreateAndAssignLearnersDto } from '@wirdi/shared';
+import { LEARNER_DETAIL_FIELDS } from '@sahibalquran/shared';
+import type { CreateAndAssignLearnersDto } from '@sahibalquran/shared';
 import { useImportLearnersViewModel } from '../../viewmodels/import-learners.viewmodel';
 import { NewLearnersTab } from './NewLearnersTab';
 

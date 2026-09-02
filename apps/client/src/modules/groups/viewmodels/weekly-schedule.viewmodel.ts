@@ -7,8 +7,8 @@ import type {
   ISODateOnlyString,
   ScheduleImageDto,
   WeekDto,
-} from '@wirdi/shared';
-import { getNowAsUTC, formatDate } from '@wirdi/shared';
+} from '@sahibalquran/shared';
+import { getNowAsUTC, formatDate } from '@sahibalquran/shared';
 import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';

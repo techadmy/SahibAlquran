@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
-import type { NotificationDto } from '@wirdi/shared';
+import type { NotificationDto } from '@sahibalquran/shared';
 import { queryKeys } from '@/lib/query-client';
 import { NOTIFICATION_QUERY_INVALIDATION_MAP } from '../utils/notification.util';
 
@@ -22,7 +22,7 @@ export function useSSE({ enabled }: { enabled: boolean }) {
   useEffect(() => {
     if (!enabled) return;
 
-    const token = localStorage.getItem('wirdi_token');
+    const token = localStorage.getItem('sahibalquran_token');
     if (!token) return;
 
     let eventSource: EventSource | null = null;

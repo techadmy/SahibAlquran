@@ -3,7 +3,7 @@ import { Users, Globe, Pencil } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import type { ReadSourceType, WirdStatus } from '@wirdi/shared';
+import type { ReadSourceType, WirdStatus } from '@sahibalquran/shared';
 
 const cellVariants = cva(
   'relative inline-flex size-6 items-center justify-center rounded-md text-xs font-medium transition-colors',

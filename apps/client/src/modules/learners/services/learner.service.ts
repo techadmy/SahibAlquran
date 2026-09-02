@@ -5,7 +5,7 @@ import {
   QueryLearnersDto,
   UnifiedApiResponse,
   UpdateLearnerDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const learnerService = {
   queryLearners: async (query: QueryLearnersDto): Promise<UnifiedApiResponse<LearnerDto[]>> => {

@@ -8,8 +8,8 @@ import {
   TIME_MINUTES_MAX,
   recitationSchema,
   platformSchema,
-} from '@wirdi/shared';
-import type { PlatformType, RecitationType } from '@wirdi/shared';
+} from '@sahibalquran/shared';
+import type { PlatformType, RecitationType } from '@sahibalquran/shared';
 import { z, type ZodType } from 'zod';
 
 export type StudentMainInfoFormValues = Pick<CreateLearnerDto, 'name' | 'phone' | 'timezone'> & {

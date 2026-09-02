@@ -1,4 +1,4 @@
-import { DEFAULT_TIMEZONE, TIMEZONES } from '@wirdi/shared';
+import { DEFAULT_TIMEZONE, TIMEZONES } from '@sahibalquran/shared';
 import { withRole } from '@/hoc/withRole';
 import { Button } from '@/components/ui/button';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';

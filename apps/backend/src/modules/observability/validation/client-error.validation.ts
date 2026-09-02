@@ -1,4 +1,4 @@
-import { type ClientErrorLogDto } from '@wirdi/shared';
+import { type ClientErrorLogDto } from '@sahibalquran/shared';
 import { z, type ZodType } from 'zod';
 
 const clientErrorMetadataValueSchema = z.union([

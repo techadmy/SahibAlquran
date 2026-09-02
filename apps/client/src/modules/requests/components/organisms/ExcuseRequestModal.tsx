@@ -7,7 +7,7 @@ import { DateTimePicker } from '@/components/ui/date-time-picker';
 import { Typography } from '@/components/ui/typography';
 import { GroupSelectField } from '../molecules/GroupSelectField';
 import { useExcuseRequestViewModel } from '../../viewmodels/create-excuse-request.viewmodel';
-import type { ISODateOnlyString } from '@wirdi/shared';
+import type { ISODateOnlyString } from '@sahibalquran/shared';
 
 type ExcuseRequestModalProps = {
   open: boolean;

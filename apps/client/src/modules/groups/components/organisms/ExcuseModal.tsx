@@ -15,8 +15,8 @@ import { Separator } from '@/components/ui/separator';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { DateTimePicker } from '@/components/ui/date-time-picker';
 import { Typography } from '@/components/ui/typography';
-import { formatDate } from '@wirdi/shared';
-import type { ISODateString, ISODateOnlyString, TimeZoneType } from '@wirdi/shared';
+import { formatDate } from '@sahibalquran/shared';
+import type { ISODateString, ISODateOnlyString, TimeZoneType } from '@sahibalquran/shared';
 import { useExcuseModalViewModel } from '../../viewmodels/excuse-modal.viewmodel';
 
 type ExcuseModalProps = {

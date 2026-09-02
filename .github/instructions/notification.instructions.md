@@ -8,7 +8,7 @@ applyTo: '**'
 
 - **Event-driven** — services emit typed events via `TypedEventEmitter` (global wrapper service); `NotificationService` listens with `@OnEvent`
 - **Type-safe events** — `EventsModule` provides `TypedEventEmitter` globally (wraps `EventEmitter2` with compile-time type checking)
-- **Pluggable channels** (IN_APP, PUSH, EMAIL) — channel routing declared in `NOTIFICATION_CHANNEL_CONFIG` from `@wirdi/shared`
+- **Pluggable channels** (IN_APP, PUSH, EMAIL) — channel routing declared in `NOTIFICATION_CHANNEL_CONFIG` from `@sahibalquran/shared`
 - **Type-safe payloads** via `NotificationPayloadMap` — each notification type defines its own shape
 - **SSE real-time push** — `@Sse` endpoint uses `TypedEventEmitter.onUserStream()` per-user events
 
@@ -53,7 +53,7 @@ export class AlertService {
 
 ## Adding a New Type
 
-1. **Define payload** in `@wirdi/shared/notification.types.ts`:
+1. **Define payload** in `@sahibalquran/shared/notification.types.ts`:
 
    ```ts
    export type NotificationPayloadMap = {
@@ -130,7 +130,7 @@ Zero changes needed in `NotificationService` or any caller.
 
 - **Never inject `NotificationService` in other services** — use `TypedEventEmitter` + `.emit('notification.send', ...)`
 - **Never inject raw `EventEmitter2`** — always use `TypedEventEmitter` for type safety
-- All notification types in `@wirdi/shared` — never define locally
+- All notification types in `@sahibalquran/shared` — never define locally
 - Channel config is the single source of truth for routing
 - Each event always includes `recipientId` + type-specific `payload`
 - No business logic in channels — they only handle delivery

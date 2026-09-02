@@ -1,7 +1,7 @@
 import { ShieldCheck } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Typography } from '@/components/ui/typography';
-import { formatDate, type ISODateString, type TimeZoneType } from '@wirdi/shared';
+import { formatDate, type ISODateString, type TimeZoneType } from '@sahibalquran/shared';
 
 type Props = {
   expiresAt: string;

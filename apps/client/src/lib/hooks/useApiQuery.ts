@@ -1,6 +1,6 @@
 // Generic API query hook with unified error handling
 import { useQuery, type UseQueryOptions } from '@tanstack/react-query';
-import type { UnifiedApiResponse } from '@wirdi/shared';
+import type { UnifiedApiResponse } from '@sahibalquran/shared';
 import type { ApiError } from '@/lib/errors/normalize-error';
 
 /**

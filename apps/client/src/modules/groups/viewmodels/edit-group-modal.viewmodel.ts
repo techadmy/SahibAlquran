@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { updateGroupSchema } from '@wirdi/shared';
-import type { GroupDto, UpdateGroupDto } from '@wirdi/shared';
+import { updateGroupSchema } from '@sahibalquran/shared';
+import type { GroupDto, UpdateGroupDto } from '@sahibalquran/shared';
 
 type UseEditGroupModalArgs = {
   group: GroupDto;

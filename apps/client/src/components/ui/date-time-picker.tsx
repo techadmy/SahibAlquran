@@ -7,7 +7,7 @@ import {
   parseDateString,
   formatDate,
   formatDateLongArabic,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { Calendar } from './calendar';
 import { Popover, PopoverContent, PopoverTrigger } from './popover';
 import { Button } from './button';

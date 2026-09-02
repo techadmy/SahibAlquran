@@ -5,7 +5,7 @@ import {
   dateToISODateOnly,
   type ISODateOnlyString,
   type TimeMinutes,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 type PhoneMap = Record<string, { id: string; role: UserRole }>;
 type WeekDayNumber = 6 | 0 | 1 | 2 | 3 | 4;

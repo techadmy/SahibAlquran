@@ -5,7 +5,7 @@ import {
   PaginationQueryType,
   PaginationResponseMeta,
   getStartAndEndOfDay,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { Prisma, PrismaClient } from 'generated/prisma/client';
 import { createMariaDbAdapter } from './database.util';
 import { EnvVariables } from 'src/types/declartion-merging';

@@ -2,7 +2,7 @@ import { Controller, Get, Patch, Query, Sse, UnauthorizedException } from '@nest
 import { NotificationService } from './notification.service';
 import { TypedEventEmitter } from './typed-event-emitter.service';
 import { JwtService } from '@nestjs/jwt';
-import type { NotificationDto, UnreadCountDto, CursorPaginatedResult } from '@wirdi/shared';
+import type { NotificationDto, UnreadCountDto, CursorPaginatedResult } from '@sahibalquran/shared';
 import { User } from '../../decorators/user.decorator';
 import { IsPublic } from '../../decorators/public.decorator';
 import type { JWT_PAYLOAD } from '../auth/types/user-auth.type';

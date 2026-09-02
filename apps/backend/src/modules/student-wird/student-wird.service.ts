@@ -17,7 +17,7 @@ import type {
   UpdateStudentWirdsDto,
   TimeMinutes,
   TimeZoneType,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import {
   getNowAsUTC,
   addDaysToDateStr,
@@ -25,7 +25,7 @@ import {
   combineDateTime,
   getStartAndEndOfDay,
   isSaturday,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { DatabaseService } from '../database/database.service';
 import { AlertService } from '../alert/alert.service';
 

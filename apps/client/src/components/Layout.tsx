@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { User } from '@wirdi/shared';
+import { User } from '@sahibalquran/shared';
 import {
   LogOut,
   GraduationCap,

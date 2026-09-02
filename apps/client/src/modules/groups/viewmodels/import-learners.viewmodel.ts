@@ -14,13 +14,13 @@ import {
   normalizePhoneInput,
   timeStringToMinutes,
   TIMEZONES,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import type {
   CreateAndAssignLearnersDto,
   PlatformType,
   RecitationType,
   TimeZoneType,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 type FormValues = Pick<CreateAndAssignLearnersDto, 'learners'>;
 

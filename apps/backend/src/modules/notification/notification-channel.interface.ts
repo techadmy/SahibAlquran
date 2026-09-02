@@ -1,4 +1,4 @@
-import { NotificationType, SendNotificationDto } from '@wirdi/shared';
+import { NotificationType, SendNotificationDto } from '@sahibalquran/shared';
 
 export const NOTIFICATION_CHANNEL_REGISTRY = Symbol('NOTIFICATION_CHANNEL_REGISTRY');
 

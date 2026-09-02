@@ -30,7 +30,7 @@ import {
   type CreateWeekScheduleDto,
   type UpdateGroupDto,
   type UpdateScheduleImageDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { GroupService } from './group.service';
 @Controller('group')
 export class GroupController {

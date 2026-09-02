@@ -6,7 +6,7 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';
 import { groupService } from '../../services/group.service';
-import type { ReactivateMemberDto } from '@wirdi/shared';
+import type { ReactivateMemberDto } from '@sahibalquran/shared';
 
 type ReactivateLearnerButtonProps = {
   studentId: string;

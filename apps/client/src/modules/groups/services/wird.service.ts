@@ -5,7 +5,7 @@ import type {
   UnifiedApiResponse,
   StudentWeekWirdsDto,
   UpdateStudentWirdsDto,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const wirdService = {
   getGroupWeeks: (groupId: string): Promise<UnifiedApiResponse<WeekWithCurrentFlagDto[]>> =>

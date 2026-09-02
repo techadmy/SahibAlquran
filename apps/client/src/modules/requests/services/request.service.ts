@@ -5,7 +5,7 @@ import type {
   ReviewRequestDto,
   RequestStatsDto,
   UnifiedApiResponse,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const requestService = {
   createExcuseRequest: (

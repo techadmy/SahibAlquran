@@ -1,4 +1,4 @@
-import type { ClientErrorLogDto } from '@wirdi/shared';
+import type { ClientErrorLogDto } from '@sahibalquran/shared';
 
 export type BackendErrorLogEvent = {
   source: 'backend';

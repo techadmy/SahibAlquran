@@ -5,7 +5,7 @@ import { useApp } from '@/contexts/AppContext';
 import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { queryKeys } from '@/lib/query-client';
 import { groupService } from '../services/group.service';
-import type { GroupDto } from '@wirdi/shared';
+import type { GroupDto } from '@sahibalquran/shared';
 
 const AdminGroupDetailView = lazy(() => import('./AdminGroupDetailView'));
 const LearnerGroupDetailView = lazy(() => import('./LearnerGroupDetailView'));

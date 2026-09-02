@@ -6,7 +6,7 @@ import { queryClient, queryKeys } from '@/lib/query-client';
 import { useApp } from '@/contexts/AppContext';
 import { userService } from '@/modules/users/services/user.service';
 import { groupService } from '../services/group.service';
-import type { CreateGroupDto, GroupDto, GroupStatsDto, StaffUserDto } from '@wirdi/shared';
+import type { CreateGroupDto, GroupDto, GroupStatsDto, StaffUserDto } from '@sahibalquran/shared';
 
 export function useGroupsViewModel() {
   const { user } = useApp();

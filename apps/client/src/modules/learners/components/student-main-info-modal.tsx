@@ -1,4 +1,4 @@
-import { LEARNER_DETAIL_FIELDS, TIMEZONES } from '@wirdi/shared';
+import { LEARNER_DETAIL_FIELDS, TIMEZONES } from '@sahibalquran/shared';
 import { FormField } from '@/components/forms/form-field';
 import { Button } from '@/components/ui/button';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';

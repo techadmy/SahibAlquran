@@ -6,8 +6,8 @@ import {
   RECITATION_OPTIONS,
   minutesToTimeString,
   convertMinutesToTimezone,
-} from '@wirdi/shared';
-import type { TimeMinutes } from '@wirdi/shared';
+} from '@sahibalquran/shared';
+import type { TimeMinutes } from '@sahibalquran/shared';
 import { UserCircle2 } from 'lucide-react';
 import { TableCell, TableRow } from '@/components/ui/table';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';

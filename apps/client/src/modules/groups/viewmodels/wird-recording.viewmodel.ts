@@ -2,7 +2,7 @@ import { useEffect, useMemo } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'sonner';
-import type { GroupMemberDto, RecordLearnerWirdDto } from '@wirdi/shared';
+import type { GroupMemberDto, RecordLearnerWirdDto } from '@sahibalquran/shared';
 import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';

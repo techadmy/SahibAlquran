@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react';
 import { useForm, type Resolver } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { DEFAULT_TIMEZONE } from '@wirdi/shared';
-import type { CreateLearnerDto, LearnerDto, UpdateLearnerDto } from '@wirdi/shared';
+import { DEFAULT_TIMEZONE } from '@sahibalquran/shared';
+import type { CreateLearnerDto, LearnerDto, UpdateLearnerDto } from '@sahibalquran/shared';
 import {
   studentMainInfoFormSchema,
   type StudentMainInfoFormValues,

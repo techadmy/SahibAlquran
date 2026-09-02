@@ -8,7 +8,7 @@ import { WirdStatusCell } from './WirdStatusCell';
 import { ExcuseModal } from '../organisms/ExcuseModal';
 import { EditAttendanceModal } from '../organisms/EditAttendanceModal';
 import { ReactivateLearnerButton } from './ReactivateLearnerButton';
-import type { GroupWirdTrackingRowDto, TimeZoneType } from '@wirdi/shared';
+import type { GroupWirdTrackingRowDto, TimeZoneType } from '@sahibalquran/shared';
 
 type StudentWirdRowProps = {
   row: GroupWirdTrackingRowDto;

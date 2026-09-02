@@ -5,8 +5,8 @@ import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';
 import { useApp } from '@/contexts/AppContext';
 import { excuseService } from '../services/excuse.service';
-import { getNowAsUTC, dateOnlyToUTC } from '@wirdi/shared';
-import type { ExcuseDto, ISODateOnlyString } from '@wirdi/shared';
+import { getNowAsUTC, dateOnlyToUTC } from '@sahibalquran/shared';
+import type { ExcuseDto, ISODateOnlyString } from '@sahibalquran/shared';
 
 export function useExcuseModalViewModel(
   studentId: string,

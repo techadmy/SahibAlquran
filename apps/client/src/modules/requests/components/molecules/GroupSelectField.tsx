@@ -6,7 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import type { GroupDto } from '@wirdi/shared';
+import type { GroupDto } from '@sahibalquran/shared';
 
 type GroupSelectFieldProps = {
   value: string;

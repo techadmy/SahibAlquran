@@ -10,7 +10,7 @@ import {
 import { Typography } from '@/components/ui/typography';
 import { WirdStatusCell } from '../atoms/WirdStatusCell';
 import { StudentWirdRow } from '../atoms/StudentWirdRow';
-import type { GroupWirdTrackingRowDto, WirdStatus, TimeZoneType } from '@wirdi/shared';
+import type { GroupWirdTrackingRowDto, WirdStatus, TimeZoneType } from '@sahibalquran/shared';
 
 /** Arabic display order: Sat(6) → Sun(0) → Mon(1) → Tue(2) → Wed(3) → Thu(4) */
 const DAY_LABELS: Record<number, string> = {

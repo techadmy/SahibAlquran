@@ -1,4 +1,4 @@
-import type { ClientErrorLogDto, ClientErrorLogResponseDto } from '@wirdi/shared';
+import type { ClientErrorLogDto, ClientErrorLogResponseDto } from '@sahibalquran/shared';
 import { apiClient } from '@/services';
 
 class ObservabilityService {

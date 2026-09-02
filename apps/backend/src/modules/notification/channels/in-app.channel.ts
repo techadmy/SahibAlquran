@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { NotificationType, SendNotificationDto } from '@wirdi/shared';
+import { NotificationType, SendNotificationDto } from '@sahibalquran/shared';
 import { INotificationChannel } from '../notification-channel.interface';
 import { DatabaseService } from '../../database/database.service';
 import { Prisma } from 'generated/prisma/client';

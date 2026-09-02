@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { AuthResponseDto, LoginCredentialsDto, loginSchema } from '@wirdi/shared';
+import { AuthResponseDto, LoginCredentialsDto, loginSchema } from '@sahibalquran/shared';
 import { useApp } from '@/contexts/AppContext';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { storageService } from '@/services';

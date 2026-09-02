@@ -1,17 +1,17 @@
 {
-  "name": "النبراس",
-  "short_name": "النبراس",
+  "name": "صاحب القران",
+  "short_name": "صاحب القران",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "theme_color": "#1276a8",
-  "dark_theme_color": "#0d1930",
+  "theme_color": "#1e728f",
+  "dark_theme_color": "#102637",
   "background_color": "#f5fbfc",
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "/logo.jpeg",
       "sizes": "any",
-      "type": "image/png",
+      "type": "image/jpeg",
       "purpose": "any"
     }
   ]

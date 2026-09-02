@@ -4,7 +4,7 @@ import { Typography } from '@/components/ui/typography';
 import { Badge } from '@/components/ui/badge';
 import { TimezoneDisplay } from '@/components/ui/timezone-display';
 import { GroupStatusBadge } from '../atoms/GroupStatusBadge';
-import type { GroupDto } from '@wirdi/shared';
+import type { GroupDto } from '@sahibalquran/shared';
 
 type GroupInfoCardProps = {
   group: GroupDto;

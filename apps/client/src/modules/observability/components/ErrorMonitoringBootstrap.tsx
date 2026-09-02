@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from 'react';
-import type { ClientErrorCaptureChannel } from '@wirdi/shared';
+import type { ClientErrorCaptureChannel } from '@sahibalquran/shared';
 import { buildClientErrorPayload } from '../utils/client-error.util';
 import { useClientErrorReportMutation } from '../hooks/useClientErrorReportMutation';
 

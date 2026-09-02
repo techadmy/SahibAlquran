@@ -13,7 +13,7 @@ import type {
   UpdateStaffUserDto,
   UpdateLearnerDto,
   UserAuthType,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 import { UserRole } from 'generated/prisma/client';
 import type { User as UserEntity } from 'generated/prisma/client';
@@ -29,7 +29,7 @@ import {
   changeOwnPasswordSchema,
   updateOwnProfileSchema,
   promoteLearnersToModeratorSchema,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { UserService } from './user.service';
 
 @Controller('user')

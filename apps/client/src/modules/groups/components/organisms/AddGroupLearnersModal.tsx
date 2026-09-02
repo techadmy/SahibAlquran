@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import type { CreateAndAssignLearnersDto } from '@wirdi/shared';
+import type { CreateAndAssignLearnersDto } from '@sahibalquran/shared';
 import { AssignExistingLearnersTab } from './AssignExistingLearnersTab';
 import { NewLearnersTab } from './NewLearnersTab';
 import { ImportLearnersTab } from './ImportLearnersTab';

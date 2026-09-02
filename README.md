@@ -1,13 +1,13 @@
-# وِرْدي (Wirdi)
+# صاحب القران (SahibAlquran)
 
-**Wirdi** is an Arabic web app for tracking daily Quran recitation assessments (wird) within study groups. Each learner must record their daily wird — حفظ، مراجعة، تلاوة — with their assigned mate, from Saturday to Thursday. Missing sessions trigger accountability alerts and can auto-deactivate a learner, keeping the group disciplined and progressing.
+**SahibAlquran** is an Arabic web app for tracking daily Quran recitation assessments (wird) within study groups. Each learner must record their daily wird — حفظ، مراجعة، تلاوة — with their assigned mate, from Saturday to Thursday. Missing sessions trigger accountability alerts and can auto-deactivate a learner, keeping the group disciplined and progressing.
 
 ---
 
 ## 🏗️ Structure
 
 ```
-wirdi/
+sahibalquran/
 ├── apps/
 │   ├── backend/          NestJS + Prisma + MySQL
 │   └── client/           React 19 + Vite + Tailwind v4 (RTL, Arabic UI)
@@ -53,7 +53,7 @@ wirdi/
 
 ```bash
 git clone <repo-url>
-cd wirdi
+cd sahibalquran
 pnpm install
 ```
 
@@ -68,7 +68,7 @@ docker-compose up -d
 Copy `.env.example` to `.env` in `apps/backend/` and set:
 
 ```
-DATABASE_URL="mysql://root:PASSWORD@localhost:3305/wirdi"
+DATABASE_URL="mysql://root:PASSWORD@localhost:3305/sahibalquran"
 JWT_SECRET="your-secret"
 ```
 

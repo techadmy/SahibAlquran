@@ -5,7 +5,7 @@ import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryClient, queryKeys } from '@/lib/query-client';
 import { requestService } from '../services/request.service';
 import { groupService } from '@/modules/groups';
-import type { GroupDto, CreateRequestDto, RequestDto } from '@wirdi/shared';
+import type { GroupDto, CreateRequestDto, RequestDto } from '@sahibalquran/shared';
 
 export function useActivationRequestViewModel(isOpen: boolean, defaultGroupId?: string) {
   const [selectedGroupId, setSelectedGroupId] = useState<string>(defaultGroupId ?? '');

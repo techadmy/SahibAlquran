@@ -3,7 +3,7 @@ import type {
   LearnerGroupOverviewDto,
   RecordLearnerWirdDto,
   UnifiedApiResponse,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const learnerWirdService = {
   getLearnerGroupOverview: (

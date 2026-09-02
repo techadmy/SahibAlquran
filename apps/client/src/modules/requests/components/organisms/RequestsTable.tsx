@@ -12,14 +12,14 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Typography } from '@/components/ui/typography';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
-import { formatDate } from '@wirdi/shared';
+import { formatDate } from '@sahibalquran/shared';
 import type {
   RequestDto,
   RequestType,
   TimeZoneType,
   RequestPayloadMap,
   ISODateString,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 type RequestsTableProps = {
   requests: RequestDto[];

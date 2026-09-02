@@ -2,8 +2,8 @@ import type {
   ClientErrorCaptureChannel,
   ClientErrorLogDto,
   ClientErrorMetadata,
-} from '@wirdi/shared';
-import { getNowAsUTC } from '@wirdi/shared';
+} from '@sahibalquran/shared';
+import { getNowAsUTC } from '@sahibalquran/shared';
 import { normalizeError } from '@/lib/errors/normalize-error';
 import { storageService } from '@/services';
 

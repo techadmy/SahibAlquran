@@ -1,4 +1,4 @@
-import { LearnerGroupSummaryDto } from '@wirdi/shared';
+import { LearnerGroupSummaryDto } from '@sahibalquran/shared';
 import { Badge } from '@/components/ui/badge';
 import { Typography } from '@/components/ui/typography';
 

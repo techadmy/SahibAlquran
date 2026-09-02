@@ -5,7 +5,7 @@ import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { queryKeys } from '@/lib/query-client';
 import { notificationService } from '../services/notification.service';
 import { useSSE } from './useSSE';
-import type { NotificationDto } from '@wirdi/shared';
+import type { NotificationDto } from '@sahibalquran/shared';
 import { toast } from 'sonner';
 
 export function useNotificationsViewModel(isAuthenticated: boolean) {

@@ -1,4 +1,4 @@
-import { UserRole } from '@wirdi/shared';
+import { UserRole } from '@sahibalquran/shared';
 import { Shield, UserCog, GraduationCap, type LucideIcon } from 'lucide-react';
 import type { InteractiveColor } from '@/components/ui/interactive-variants';
 

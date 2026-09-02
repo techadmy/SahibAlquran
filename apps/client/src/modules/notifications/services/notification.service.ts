@@ -4,7 +4,7 @@ import type {
   UnreadCountDto,
   CursorPaginatedResult,
   UnifiedApiResponse,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 
 export const notificationService = {
   getNotifications: (

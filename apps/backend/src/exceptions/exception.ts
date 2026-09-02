@@ -9,7 +9,7 @@ import {
 import { Request, Response } from 'express';
 import { ZodError } from 'zod';
 import { isDevelopment } from 'src/utils/util';
-import { ApiErrorResponse, getNowAsUTC } from '@wirdi/shared';
+import { ApiErrorResponse, getNowAsUTC } from '@sahibalquran/shared';
 import { Prisma } from 'generated/prisma/client';
 import { AppLogger } from 'src/modules/logging/app-logger.service';
 import { APIError } from '@imagekit/nodejs';

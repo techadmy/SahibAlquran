@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { GroupStatsDto } from '@wirdi/shared';
+import { GroupStatsDto } from '@sahibalquran/shared';
 import { DatabaseService } from '../database/database.service';
 
 /**

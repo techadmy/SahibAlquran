@@ -1,4 +1,4 @@
-import { getTimezoneLabel } from '@wirdi/shared';
+import { getTimezoneLabel } from '@sahibalquran/shared';
 import { Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 

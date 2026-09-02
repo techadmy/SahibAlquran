@@ -7,7 +7,7 @@ import {
   StaffUserDto,
   UpdateStaffUserDto,
   UserAuthRole,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { toast } from 'sonner';
@@ -15,7 +15,7 @@ import { useApp } from '@/contexts/AppContext';
 import { useApiMutation } from '@/lib/hooks/useApiMutation';
 import { useApiQuery } from '@/lib/hooks/useApiQuery';
 import { queryClient, queryKeys } from '@/lib/query-client';
-import { createStaffSchema, updateStaffSchema } from '@wirdi/shared';
+import { createStaffSchema, updateStaffSchema } from '@sahibalquran/shared';
 import { userService } from '../services/user.service';
 import { learnerService } from '@/modules/learners/services/learner.service';
 

@@ -1,8 +1,8 @@
-import { User } from '@wirdi/shared';
+import { User } from '@sahibalquran/shared';
 
 class StorageService {
-  private readonly USER_KEY = 'wirdi_user';
-  private readonly TOKEN_KEY = 'wirdi_token';
+  private readonly USER_KEY = 'sahibalquran_user';
+  private readonly TOKEN_KEY = 'sahibalquran_token';
 
   // User
   saveUser(user: User): void {

@@ -1,8 +1,8 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
 import { TypedEventEmitter } from '../notification/typed-event-emitter.service';
-import type { RequestDto, RequestType, RequestPayloadMap } from '@wirdi/shared';
-import type { ISODateString } from '@wirdi/shared';
+import type { RequestDto, RequestType, RequestPayloadMap } from '@sahibalquran/shared';
+import type { ISODateString } from '@sahibalquran/shared';
 import type { Prisma } from 'generated/prisma/client';
 
 @Injectable()

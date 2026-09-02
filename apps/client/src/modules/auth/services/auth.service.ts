@@ -1,5 +1,5 @@
 import { apiClient } from '@/services';
-import { UnifiedApiResponse, AuthResponseDto, LoginCredentialsDto } from '@wirdi/shared';
+import { UnifiedApiResponse, AuthResponseDto, LoginCredentialsDto } from '@sahibalquran/shared';
 
 export const authService = {
   login: async (credentials: LoginCredentialsDto): Promise<UnifiedApiResponse<AuthResponseDto>> => {

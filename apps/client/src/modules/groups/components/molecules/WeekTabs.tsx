@@ -1,5 +1,5 @@
-import { formatDate } from '@wirdi/shared';
-import type { WeekWithCurrentFlagDto } from '@wirdi/shared';
+import { formatDate } from '@sahibalquran/shared';
+import type { WeekWithCurrentFlagDto } from '@sahibalquran/shared';
 import { Lock } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';

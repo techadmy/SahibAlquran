@@ -161,7 +161,7 @@ export function WirdRecordingCard({ groupId }: Props) {
                 <SelectContent>
                   {vm.hasMate && <SelectItem value='DEFAULT_GROUP_MATE'>رفيقي الدائم</SelectItem>}
                   <SelectItem value='DIFFERENT_GROUP_MATE'>متطوع من داخل المجموعة</SelectItem>
-                  <SelectItem value='OUTSIDE_GROUP'>متطوع من منصة النبراس</SelectItem>
+                  <SelectItem value='OUTSIDE_GROUP'>متطوع من منصة صاحب القران</SelectItem>
                 </SelectContent>
               </Select>
             )}

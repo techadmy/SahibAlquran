@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
 import { Navigate } from 'react-router-dom';
-import { UserRole } from '@wirdi/shared';
+import { UserRole } from '@sahibalquran/shared';
 import { useApp } from '@/contexts/AppContext';
 
 export function withRole<P extends object>(

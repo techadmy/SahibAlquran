@@ -4,8 +4,8 @@ import type { Control, FieldErrors, UseFieldArrayReturn } from 'react-hook-form'
 import { DialogFooter } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { FormField } from '@/components/forms/form-field';
-import { LEARNER_DETAIL_FIELDS, TIMEZONES } from '@wirdi/shared';
-import type { CreateAndAssignLearnersDto } from '@wirdi/shared';
+import { LEARNER_DETAIL_FIELDS, TIMEZONES } from '@sahibalquran/shared';
+import type { CreateAndAssignLearnersDto } from '@sahibalquran/shared';
 
 type FormValues = Pick<CreateAndAssignLearnersDto, 'learners'>;
 

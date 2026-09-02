@@ -8,7 +8,7 @@ import {
   CursorPaginationQuery,
   CursorPaginatedResult,
   NotificationPayloadMap,
-} from '@wirdi/shared';
+} from '@sahibalquran/shared';
 import {
   NOTIFICATION_CHANNEL_REGISTRY,
   type NotificationChannelRegistry,
