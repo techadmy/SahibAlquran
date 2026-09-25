@@ -1,6 +1,6 @@
-# صاحب القران (SahibAlquran)
+# الماهر بالقرآن (MaherQuran)
 
-**SahibAlquran** is an Arabic web app for tracking daily Quran recitation assessments (wird) within study groups. Each learner must record their daily wird — حفظ، مراجعة، تلاوة — with their assigned mate, from Saturday to Thursday. Missing sessions trigger accountability alerts and can auto-deactivate a learner, keeping the group disciplined and progressing.
+**MaherQuran** (repo/package name: `sahibalquran`) is an Arabic web app for tracking daily Quran recitation assessments (wird) within study groups. Each learner must record their daily wird — حفظ، مراجعة، تلاوة — with their assigned mate, from Saturday to Thursday. Missing sessions trigger accountability alerts and can auto-deactivate a learner, keeping the group disciplined and progressing.
 
 ---
 
