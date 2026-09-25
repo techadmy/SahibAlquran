@@ -1,3 +1,7 @@
 sahibalquran.ummahplatform.com {
 	reverse_proxy app:5000
 }
+
+maherquran.ummahplatform.com {
+	reverse_proxy app:5000
+}
