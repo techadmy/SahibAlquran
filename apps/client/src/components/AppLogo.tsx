@@ -15,7 +15,7 @@ export function AppLogo({ className, size = 'md', ...props }: AppLogoProps) {
     <div className={cn('inline-flex items-center', className)} {...props}>
       <img
         src='/logo.jpeg'
-        alt='صاحب القران'
+        alt='الماهر بالقرآن'
         className={cn('w-auto object-contain', sizeClasses[size])}
       />
     </div>
